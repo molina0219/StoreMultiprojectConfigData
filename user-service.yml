@@ -11,7 +11,7 @@ spring:
         password: admin
         instance:
           service-base-url: http://localhost:9070
-          name: Shopping API Service
+          name: Users API Service
           metadata:
             user.name: admin
             user.password: admin
