@@ -11,15 +11,19 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: showtimes-product
-          uri: lb://service-product
+        - id: showtimes-service
+          uri: lb://showtimes-service
           predicates:
-            - Path=/store/api/v1/products/**
+            - Path=/Parcial2/api/v1/showtimes/**
         - id: movies-service
-          uri: lb://customer-service
+          uri: lb://movies-service
           predicates:
-            - Path=/store/api/v1/customers/**
+            - Path=/Parcial2/api/v1/movies/**
         - id: user-service
-          uri: lb://shopping-service
+          uri: lb://user-service
           predicates:
-            - Path=/store/api/v1/shoppings/**
+            - Path=/Parcial2/api/v1/user/**
+        - id: bookings-service
+          uri: lb://bookings-service
+          predicates:
+            - Path=/Parcial2/api/v1/bookings/**    

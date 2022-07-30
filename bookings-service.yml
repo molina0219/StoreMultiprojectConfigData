@@ -1,6 +1,6 @@
 spring:
   application:
-    name: movies-service
+    name: bookings-service
   profiles:
     active: dev
   boot:
@@ -11,14 +11,14 @@ spring:
         password: admin
         instance:
           service-base-url: http://localhost:9060
-          name: Movies API Service
+          name: Showtimes API Service
           metadata:
             user.name: admin
             user.password: admin
 server:
   servlet:
-    context-path: /Parcial2/api/v1
-  port: 9060
+    context-path: /parcial2/api/v1
+  port: 9080
 eureka:
   client:
     service-url:
