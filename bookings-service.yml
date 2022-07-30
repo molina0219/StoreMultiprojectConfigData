@@ -19,6 +19,9 @@ server:
   servlet:
     context-path: /parcial2/api/v1
   port: 9080
+feign:
+  circuitbreaker:
+    enabled: true
 eureka:
   client:
     service-url:
