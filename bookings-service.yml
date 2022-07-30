@@ -1,6 +1,6 @@
 spring:
   application:
-    name: bookings-service
+    name: booking-service
   profiles:
     active: dev
   boot:
